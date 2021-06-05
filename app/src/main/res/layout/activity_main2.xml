@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/textlapor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cek Kembali Data Anda"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/btn_back"/>
+            <TextView
+                android:id="@+id/tv_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="NIK"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/textlapor"
+                />
+            <TextView
+                android:id="@+id/et_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="8dp"
+                android:text="111222334455"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nik"
+                />
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/et_nik"
+                />
+            <TextView
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="8dp"
+                android:text="Mohammad Reksha"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+                />
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tanggal Lahir"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/et_nama"
+                />
+            <TextView
+                android:id="@+id/et_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="8dp"
+                android:text="2 November 2021"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tanggal"
+                />
+            <TextView
+                android:id="@+id/tv_jk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/et_tanggal"
+                />
+            <TextView
+                android:id="@+id/rg_jenkel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="8dp"
+                android:text="Laki laki"
+                app:layout_constraintTop_toBottomOf="@+id/tv_jk"
+                />
+
+            <TextView
+                android:id="@+id/tv_hub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Hubungan Dengan Anda"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/rg_jenkel"
+                />
+            <TextView
+                android:id="@+id/rg_hun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="8dp"
+                android:text="Orang Tua"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hub"
+                />
+            <Button
+                android:id="@+id/simpan"
+                android:layout_marginTop="180dp"
+                app:layout_constraintBottom_toTopOf="@id/edit"
+                app:layout_constraintTop_toBottomOf="@id/rg_hun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"/>
+            <Button
+                android:id="@+id/edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rg_hun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
